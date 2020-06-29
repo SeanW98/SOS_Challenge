@@ -1,0 +1,14 @@
+ul{
+    background-color: black;
+    text-align: center;
+    padding: 3%;
+}
+lia{
+    padding: 3%;
+}
+a{
+    text-decoration: none;
+}
+lia:hover{
+    background-color:rgb(48, 46, 46);
+}
