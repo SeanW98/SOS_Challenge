@@ -4,6 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//database connection
+const mongoose = require ('mongoose')
+mongoose.connect('mongodb+srv://admin:admin@sos.qbulx.mongodb.net/SOS2020?retryWrites=true&w=majority',
+{
+    useMongoClient: true
+});
+
 //creating router vars
 var landingRouter = require('./routes/landing');
 var signUpRouter = require('./routes/signUp');

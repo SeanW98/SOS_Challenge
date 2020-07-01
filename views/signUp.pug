@@ -5,4 +5,8 @@ html
   head
     title= title
 block content
-    p signUp page
+    h1 Sign Up
+    form(method="post", action= "/signUp")
+        input(name="email", type="email", placeholder="Enter Email")
+        input(name="password", type="password", placeholder="Enter New Password")
+        button(type="submit") Sign Up
