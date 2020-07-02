@@ -15,6 +15,7 @@ mongoose.connect('mongodb+srv://admin:admin@sos.qbulx.mongodb.net/SOS2020?retryW
 var landingRouter = require('./routes/landing');
 var signUpRouter = require('./routes/signUp');
 var signInRouter = require('./routes/signIn');
+var logoutRouter = require('./routes/logout');
 
 //vanilla app created
 var app = express();
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', landingRouter);
 app.use('/signUp', signUpRouter);
 app.use('/signIn', signInRouter);
+app.use('/logout', logoutRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

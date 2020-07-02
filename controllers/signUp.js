@@ -28,7 +28,7 @@ exports.addUser = function (req, res, next) {
                         user
                             .save()
                             .then( function () {
-                                res.redirect('/');
+                                res.redirect('/signIn');
                             }
                             );
                     }

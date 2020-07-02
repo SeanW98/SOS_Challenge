@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-
-let landing = require('../controllers/landing')
+const checkAuth = require('../middleware/check-auth');
+let landing = require('../controllers/landing');
 
 /* GET home page. */
-router.get('/',landing.get_landing);
+router.get('/', checkAuth, landing.get_landing);
 
 module.exports = router;
