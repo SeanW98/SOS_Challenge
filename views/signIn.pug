@@ -6,9 +6,9 @@ html
     title= title
 block content
     h1 Sign In
-    h2
-      input(name="email", type="email", placeholder="Enter Email") 
-    h3
-      input(name="password", type="password", placeholder="Enter Password")
-    h4
-      button(type="submit") Sign In
+    form(method="post", action= "/signIn")
+        input(name="email", type="email", placeholder="Enter Email")
+        br
+        input(name="password", type="password", placeholder="Enter Password")
+        br
+        button(type="submit") Sign In
