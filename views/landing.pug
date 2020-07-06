@@ -1,7 +1,13 @@
 include navbar
+doctype html
+html
+  head
+    script(src='/javascripts/buttons.js')
 
 block content
+    body(onload ="signInButton()")
     h1 Indiana Tourism Covid Check
     p Welcome
+    a(href="/signIn" id='signIn') Sign In
 
 
