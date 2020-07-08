@@ -2,20 +2,21 @@ include navbar
 doctype html
 html
   head
+  link(rel='stylesheet', href='/stylesheets/landing.css')
   title= title
 
 block content
         h1 Indiana Tourism Covid Check
         p Welcome
         a(href="/signIn" id='signIn') Sign In
-        div
-            lia
-                a(href="/") Museums
-            lia
+        div(id="categories")
+            lia(class="categorie")
+                a(href="/museums") Museums
+            lia(class="categorie")
                 a(href="/") Hotels
-            lia
+            lia(class="categorie")
                 a(href="/") Events
-            lia
+            lia(class="categorie")
                 a(href="/") Other
         div
             p This will be the information about the page

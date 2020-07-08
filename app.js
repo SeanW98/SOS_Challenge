@@ -17,6 +17,7 @@ var signUpRouter = require('./routes/signUp');
 var signInRouter = require('./routes/signIn');
 var logoutRouter = require('./routes/logout');
 var myAccountRouter = require('./routes/myAccount');
+var museumsRouter = require('./routes/museums');
 
 //vanilla app created
 var app = express();
@@ -37,6 +38,7 @@ app.use('/signUp', signUpRouter);
 app.use('/signIn', signInRouter);
 app.use('/logout', logoutRouter);
 app.use('/myAccount', myAccountRouter);
+app.use('/museums', museumsRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
