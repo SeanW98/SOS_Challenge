@@ -1,18 +1,18 @@
-include layout.pug
+include layout
 
 doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/navbar.css')
+    link(rel='stylesheet', href='/stylesheets/SOS_CSS.css')
     script(src='/javascripts/buttons.js')
     
 block content
     body(onload ="buttonDisplay()")
-    ul
-        lia
+    ul(class="navbar")
+        lia(class="navbar")
             a(href="/") Home Page
-        lia
+        lia(class="navbar")
             a(href="/myAccount") My Account
-        lia
+        lia(class="navbar")
             a(href="/logout" id="logout") Logout
