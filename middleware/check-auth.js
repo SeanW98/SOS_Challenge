@@ -3,10 +3,9 @@ const jwt = require('jsonwebtoken');
 module.exports = (req,res,next) => {
     try{
         let token = req.cookies.token;
-        const decoded = jwt.verify(token, 'secret');
-        req.userDate = decoded;
+        jwt.verify(token, 'secret');
         next();
     }catch (error){
-        res.send('error')
+        res.redirect('/signIn')
     }
 };

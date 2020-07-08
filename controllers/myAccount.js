@@ -1,9 +1,8 @@
+const jwt = require('jsonwebtoken');
 
 exports.get_myAccount = function (req, res, next) {
-    let token = req.cookies.token;
-    if (token == undefined){
-        res.redirect('/signIn');
-    }else{
-        res.render('myAccount');
-    }
+    var decoded = jwt.verify(req.cookies.token, 'secret');
+    var decodedValue = decoded.firstName + " " + decoded.lastName;
+
+        res.render('myAccount', { userName: decodedValue });
 }

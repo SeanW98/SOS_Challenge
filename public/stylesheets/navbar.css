@@ -1,14 +1,12 @@
-ul{
+body ul{
     background-color: black;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
 }
-lia{
-    padding: 3%;
+body ul lia{
+
+    margin: 4%;
 }
-a{
-    text-decoration: none;
-}
-lia:hover{
-    background-color:rgb(48, 46, 46);
+body ul lia a:hover{
+    text-decoration: none;   
 }

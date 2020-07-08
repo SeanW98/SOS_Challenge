@@ -2,12 +2,22 @@ include navbar
 doctype html
 html
   head
-    script(src='/javascripts/buttons.js')
+  title= title
 
 block content
-    body(onload ="signInButton()")
-    h1 Indiana Tourism Covid Check
-    p Welcome
-    a(href="/signIn" id='signIn') Sign In
+        h1 Indiana Tourism Covid Check
+        p Welcome
+        a(href="/signIn" id='signIn') Sign In
+        div
+            lia
+                a(href="/") Museums
+            lia
+                a(href="/") Hotels
+            lia
+                a(href="/") Events
+            lia
+                a(href="/") Other
+        div
+            p This will be the information about the page
 
 

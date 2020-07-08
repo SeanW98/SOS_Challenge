@@ -1,6 +1,6 @@
 
 exports.get_landing = function(req, res, next) {
-        res.render('landing')
+        res.render('landing');
   }
 
   //have 3 diffrent ladning functions. 

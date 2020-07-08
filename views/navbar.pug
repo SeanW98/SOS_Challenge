@@ -5,11 +5,14 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/navbar.css')
+    script(src='/javascripts/buttons.js')
+    
 block content
+    body(onload ="buttonDisplay()")
     ul
         lia
             a(href="/") Home Page
         lia
             a(href="/myAccount") My Account
         lia
-            a(href="/logout") Logout
+            a(href="/logout" id="logout") Logout
