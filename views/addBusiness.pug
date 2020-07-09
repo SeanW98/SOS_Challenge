@@ -1,0 +1,31 @@
+include navbar
+
+doctype html
+html
+  head
+    title= title
+block content
+    h1 Add Business
+    form(method="post", action= "/addBusiness")
+        input(name="businessName", type="text", placeholder="Business Name")
+        br
+        input(name="phoneNumber", type="text", placeholder="Business Phone Number")
+        br
+        input(name="businessAddress", type="text", placeholder="Business Address")
+        br
+        text Business Type: 
+        input(type="radio", name="businessType", value="museums")
+        | Museums
+        input(type="radio", name="businessType", value="hotels")
+        | Hotels
+        input(type="radio", name="businessType", value="events")
+        | Events
+        input(type="radio", name="businessType", value="others")
+        | Other
+        br
+        input(type="text" ,name="businessIntro", placeholder="Please enter an introduction about your business")
+        br
+        input(type="text" ,name="covidPrevention", placeholder="Please enter information on how your team is dealing with covid")
+        br
+        button(type="submit") Submit 
+include footer
