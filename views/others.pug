@@ -1,0 +1,12 @@
+include navbar
+
+doctype html
+html
+  head
+    title= title
+block content
+    h1 Others
+    ul
+        each other, i in others
+            a(href="/others/" + other._id , class='tourismList' )= other.businessName
+include footer

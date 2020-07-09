@@ -19,6 +19,10 @@ var logoutRouter = require('./routes/logout');
 var myAccountRouter = require('./routes/myAccount');
 var addBusinessRouter = require('./routes/addBusiness');
 var museumsRouter = require('./routes/museums');
+var hotelsRouter = require('./routes/hotels');
+var eventsRouter = require('./routes/events');
+var othersRouter = require('./routes/others');
+
 
 //vanilla app created
 var app = express();
@@ -41,6 +45,10 @@ app.use('/logout', logoutRouter);
 app.use('/myAccount', myAccountRouter);
 app.use('/addBusiness', addBusinessRouter);
 app.use('/museums', museumsRouter);
+app.use('/hotels', hotelsRouter);
+app.use('/events', eventsRouter);
+app.use('/others', othersRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
