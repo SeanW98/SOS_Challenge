@@ -6,8 +6,14 @@ exports.get_museums = function (req, res, next) {
     .select('businessName')
     .exec()
     .then(doc =>{
-        //doc.length
-        //doc[0],businessName
         res.render('museums', { museums: doc});
+    });
+}
+
+exports.showMuseum = function (req, res, next) {
+    Business.findOne({_id: req.params.museumId})
+    .exec()
+    .then(doc=>{
+    res.render('businessPageTemplate',{museum : doc});
     });
 }

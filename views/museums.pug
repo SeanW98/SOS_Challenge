@@ -6,9 +6,9 @@ html
     title= title
 block content
     h1 Museums
-    ul(#tourismList)
+    ul
         each museum, i in museums
-            a(href="/")= museum.businessName
+            a(href="/museums/" + museum._id , class='tourismList' )= museum.businessName
 include footer
 
 // Parsing information found from https://www.youtube.com/watch?v=Ad2ngx6CT0M
