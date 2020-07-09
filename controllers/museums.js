@@ -14,6 +14,6 @@ exports.showMuseum = function (req, res, next) {
     Business.findOne({_id: req.params.museumId})
     .exec()
     .then(doc=>{
-    res.render('businessPageTemplate',{museum : doc});
+    res.render('businessPageTemplate',{business : doc});
     });
 }
