@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken');
+const jwt = require('JsonWebToken');
 
 module.exports = (req,res,next) => {
     try{

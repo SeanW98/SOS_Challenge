@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken');
+const jwt = require('JsonWebToken');
 
 exports.get_myAccount = function (req, res, next) {
     var decoded = jwt.verify(req.cookies.token, 'secret');
