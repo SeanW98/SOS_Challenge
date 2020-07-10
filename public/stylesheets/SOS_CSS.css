@@ -4,21 +4,25 @@
 }
 
 /* navbar and footer CSS */
+body.ul.navbar{
+        text-align: left;
+}
+
 body ul.navbar{
-    background-color: black;
-    text-align: center;
+    background-color: #194769;
+    text-align: right;
     padding: 2%;
 }
 
 body ul.footer{
-    background-color: black;
+    background-color: #194769;
     text-align: center;
     padding: 1%;
 }
 
 body ul lia.navbar{
 
-    margin: 4%;
+    margin: 0.5%;
 }
 lia a:hover{
     text-decoration: none;   
