@@ -1,17 +1,24 @@
 include navbar
 doctype html
 html
-  head
-  title= title
+head
+title= title
+
 
 block content
-        p The best way to be safe from COVID-19
+        h6 The best way to be safe from COVID-19
         h1 Don't risk it. Checkfirst.
-        div
-            input(placeholder="Search")
+        h2
+        input(placeholder="Find  Where are you going?")
+        input(placeholder="Near Location")
+        button(type="submit") Search
         div(id="categories")
             lia(class="categorie")
+                a(href="/restaurants") Restaurants
+            lia(class="categorie")
                 a(href="/museums") Museums
+            lia(class="categorie")
+                a(href="/hiking") Hiking
             lia(class="categorie")
                 a(href="/hotels") Hotels
             lia(class="categorie")

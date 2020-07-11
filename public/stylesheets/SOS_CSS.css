@@ -22,7 +22,7 @@ body ul.footer{
 
 body ul lia.navbar{
 
-    margin: 2%;
+    margin: 1%;
 }
 lia a:hover{
     text-decoration: none;   
@@ -46,5 +46,5 @@ div{
 }
 
 .categorie{
-    padding: 5%;
+    padding: 2%;
 }
