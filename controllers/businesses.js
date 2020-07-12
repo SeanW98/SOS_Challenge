@@ -52,7 +52,7 @@ exports.showOneBusiness = function (req, res, next) {
 }
 
 exports.submitReview = function (req, res, next) {
-    var decoded = jwt.verify(req.cookies.token, 'secret');
+    let decoded = jwt.verify(req.cookies.token, 'secret');
     const review = new Review({
         _id: new mongoose.Types.ObjectId(),
         businessId: req.body.businessId,
