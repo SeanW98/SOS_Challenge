@@ -43,15 +43,12 @@ exports.showOneBusiness = function (req, res, next) {
     Business.findOne({_id: req.params.businessId})
     .exec()
     .then(foundBusiness=>{
-        res.render('singleBusiness',{business : foundBusiness});
+        Review.find({businessId: req.params.businessId})
+        .exec()
+        .then(foundReviews=>{
+            res.render('singleBusiness', { business: foundBusiness , reviews: foundReviews})
+        });
     });
-    // .then(foundBusiness=>{
-    //     Review.find({_id: req.params.businessId})
-    //     .exec()
-    //     .then(reviews=>{
-    //         res.render('singleBusiness',{business : foundBusiness},{reviews : reviews});
-    //     });
-    //});
 }
 
 exports.submitReview = function (req, res, next) {
@@ -62,8 +59,7 @@ exports.submitReview = function (req, res, next) {
         userId: decoded._id,
         userName: decoded.firstName + " " + decoded.lastName,
         comment: req.body.review,
-        safetyRating: "5",
-        proceduralRating: "5"
+        rating: "5",
 
     });
     review

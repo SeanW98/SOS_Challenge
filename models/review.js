@@ -6,8 +6,7 @@ const reviewSchema = mongoose.Schema({
     userId: {type: String, require: true},
     userName: {type: String, require: true},
     comment: {type: String, require: true},
-    safetyRating: {type: Number, require: true},
-    proceduralRating: {type: Number, require:true}
+    rating: {type: Number, require: true},
 });
 
 module.exports = mongoose.model('Review',reviewSchema);

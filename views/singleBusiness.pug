@@ -12,9 +12,11 @@ block content
     div
         p About: #{business.businessIntro}
         p Prevention Measures: #{business.covidPrevention}
+    br
+    h2 Reviews
     div
-        //each review, i in reviews
-            //p= review.comment
+        each review, i in reviews
+            p= review.userName + ": " + review.comment
         form(method="post", action= "/businesses/submitReview")
             input(type="text", name="review", placeholder="Add Review", size="80")
             br
