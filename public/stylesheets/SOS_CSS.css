@@ -14,18 +14,14 @@ body ul.navbar{
     padding: 2%;
 }
 
+body ul lia.navbar{
+    margin: 1%;
+}
+ /*footer CSS*/
 body ul.footer{
     background-color: #194769;
     text-align: center;
     padding: 1%;
-}
-
-body ul lia.navbar{
-
-    margin: 1%;
-}
-lia a:hover{
-    text-decoration: none;   
 }
 
 footer{
@@ -37,19 +33,14 @@ footer{
 }
 
 /* landing page CSS */
-div{
-    text-align: center;
-}
-
-#categories{
-    margin: 3%;
-}
-
-.categorie{
-    padding: 2%;
-}
 
 #landingPage{
-    margin: 3%;
     background-color: #194769;
+    margin-top: -4%;
+    padding: 3%;
+}
+
+/* buttons and a*/
+lia a:hover{
+    text-decoration: none;   
 }

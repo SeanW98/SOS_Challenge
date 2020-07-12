@@ -55,6 +55,12 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  /*Used from https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend*/
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -378,7 +384,7 @@ h1, .h1 {
   height: 162px;
   left: 75px;
   top: 176px;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 h2, .h2 {
