@@ -169,15 +169,26 @@ sup {
   top: -.5em;
 }
 
-a {
-  color: #E95420;
+a.tourismList{
+  color: #F2855E;
   text-decoration: none;
   background-color: transparent;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+a:hover.tourismList {
+    color: #ff4400;
+    text-decoration: none;
+}
+
 a:hover {
-  color: #ac3911;
-  text-decoration: underline;
+  color: #F2855E;
+  text-decoration: none;
 }
 
 a:not([href]) {
@@ -241,12 +252,19 @@ label {
 }
 
 button {
-  border-radius: 0;
+  background-color: #F2855E;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover{
+    background-color: #ff4400;
 }
 
 button:focus {
   outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 1px auto -webkit-focus-ring-color;
 }
 
 input,

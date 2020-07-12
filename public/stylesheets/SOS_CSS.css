@@ -1,10 +1,10 @@
-/*Search page CSS*/
+/*businesses CSS*/
 .tourismList{
     padding: 2%;
 }
 
 /* navbar and footer CSS */
-body.ul.navbar{
+body ul.navbar{
         text-align: left;
 }
 
@@ -38,6 +38,14 @@ footer{
     background-color: #194769;
     margin-top: -4%;
     padding: 3%;
+}
+
+.categorie{
+    padding: 3%;
+}
+
+div h2{
+    color: white;
 }
 
 /* buttons and a*/
