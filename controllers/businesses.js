@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const Business = require('../models/business');
+const Review = require('../models/review');
+const jwt = require('JsonWebToken');
 
 exports.showMuseums = function (req, res, next) {
     Business.find({businessType: 'Museums'})
@@ -40,7 +42,34 @@ exports.showOthers = function (req, res, next) {
 exports.showOneBusiness = function (req, res, next) {
     Business.findOne({_id: req.params.businessId})
     .exec()
-    .then(doc=>{
-    res.render('singleBusiness',{business : doc});
+    .then(foundBusiness=>{
+        res.render('singleBusiness',{business : foundBusiness});
     });
+    // .then(foundBusiness=>{
+    //     Review.find({_id: req.params.businessId})
+    //     .exec()
+    //     .then(reviews=>{
+    //         res.render('singleBusiness',{business : foundBusiness},{reviews : reviews});
+    //     });
+    //});
+}
+
+exports.submitReview = function (req, res, next) {
+    var decoded = jwt.verify(req.cookies.token, 'secret');
+    const review = new Review({
+        _id: new mongoose.Types.ObjectId(),
+        businessId: req.body.businessId,
+        userId: decoded._id,
+        userName: decoded.firstName + " " + decoded.lastName,
+        comment: req.body.review,
+        safetyRating: "5",
+        proceduralRating: "5"
+
+    });
+    review
+    .save()
+    .then( function () {
+    res.redirect('/');
+    }
+);
 }

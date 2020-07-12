@@ -6,4 +6,18 @@ html
     title= title
 block content
     h1 #{business.businessName}
+    div
+        p Phone Number: #{business.phoneNumber}
+        p Address: #{business.businessAddress}
+    div
+        p About: #{business.businessIntro}
+        p Prevention Measures: #{business.covidPrevention}
+    div
+        //each review, i in reviews
+            //p= review.comment
+        form(method="post", action= "/businesses/submitReview")
+            input(type="text", name="review", placeholder="Add Review", size="80")
+            br
+            input(type="hidden", name="businessId" value= business._id)
+            button(type="submit") Add Review
 include footer

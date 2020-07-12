@@ -13,7 +13,7 @@ router.get('/museums/:businessId', businesses.showOneBusiness);
 router.get('/hotels/:businessId', businesses.showOneBusiness);
 router.get('/events/:businessId', businesses.showOneBusiness);
 router.get('/others/:businessId', businesses.showOneBusiness);
-//router.post('/:museumId', museums.test);
 
+router.post('/submitReview',checkAuth, businesses.submitReview)
 
 module.exports = router;
