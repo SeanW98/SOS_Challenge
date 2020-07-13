@@ -9,23 +9,24 @@ block content
     div(id="landingPage")
         h2 The best way to be safe from COVID-19
         h1 Don't risk it. Checkfirst.
-        input(placeholder="Find  Where are you going?")
-        input(placeholder="Near Location")
-        |
-        |
-        button(type="submit") Search
-        lia(class="categorie")
-            a(href="/businesses/Museums") Museums
-        lia(class="categorie")
-            a(href="/businesses/Hotels") Hotels
-        lia(class="categorie")
-            a(href="/") Restaurants
-        lia(class="categorie")
-            a(href="/") Hiking
-        lia(class="categorie")
-            a(href="/businesses/Events") Events
-        lia(class="categorie")
-            a(href="/businesses/Others") Other
+        form(action="/", method="post", id="homeSearchBar")
+            input(type="text" placeholder="Where are you going?" size="50")
+            input(type="text" placeholder="Location" size="30")
+            button(type="submit") Search
+        br
+        div(id="homeCategorieButtons")
+            lia(class="categorie")
+                a(href="/businesses/Museums") Museums
+            lia(class="categorie")
+                a(href="/businesses/Hotels") Hotels
+            lia(class="categorie")
+                a(href="/") Restaurants
+            lia(class="categorie")
+                a(href="/") Hiking
+            lia(class="categorie")
+                a(href="/businesses/Events") Events
+            lia(class="categorie")
+                a(href="/businesses/Others") Other
     div(id="lowerLandingPage")
         p This will be the information about the page
 

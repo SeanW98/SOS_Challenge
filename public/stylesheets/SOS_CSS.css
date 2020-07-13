@@ -4,14 +4,11 @@
 }
 
 /* navbar and footer CSS */
-body ul.navbar{
-        text-align: left;
-}
 
 body ul.navbar{
     background-color: #194769;
     text-align: right;
-    padding: 2%;
+    padding-bottom: 1%;
 }
 
 body ul lia.navbar{
@@ -21,7 +18,12 @@ body ul lia.navbar{
 body ul.footer{
     background-color: #194769;
     text-align: center;
-    padding: 1%;
+    
+}
+
+#navbarOne{
+    width:7%;
+    height:7%; 
 }
 
 footer{
@@ -48,7 +50,25 @@ div h2{
     color: white;
 }
 
-/* buttons and a*/
+#homeSearchBar{
+    margin-top: -2%;
+    text-align: center;
+}
+
+#homeCategorieButtons{
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+    text-align: center;
+}
+
+/* buttons and a and input boxes*/
 lia a:hover{
     text-decoration: none;   
+}
+
+input{
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
 }
