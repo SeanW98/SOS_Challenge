@@ -7,7 +7,9 @@ const businessSchema = mongoose.Schema({
     businessAddress: {type: String, required: true},
     businessType: {type: String, required: true},
     businessIntro: {type: String, required: true},
-    covidPrevention: {type: String, require: true}
+    covidPrevention: {type: String, require: true},
+    businessHours: {type: String, require: true},
+    businessWebsite: {type: String, require: true}
     //Later, we would like to add the ability for a business to add a photo
 });
 
