@@ -14,7 +14,8 @@ exports.addBusiness = function (req, res, next) {
         businessAddress: req.body.businessAddress,
         businessType: req.body.businessType,
         businessIntro:req.body.businessIntro,
-        covidPrevention: req.body.covidPrevention
+        covidPrevention: req.body.covidPrevention,
+        businessWebsite: req.body.businessWebsite
     });
     business
     .save()
