@@ -59,7 +59,7 @@ exports.submitReview = function (req, res, next) {
         userId: decoded._id,
         userName: decoded.firstName + " " + decoded.lastName,
         comment: req.body.review,
-        rating: "5",
+        rating: req.body.rating
 
     });
     review
