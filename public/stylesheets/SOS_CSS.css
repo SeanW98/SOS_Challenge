@@ -42,6 +42,18 @@ footer{
     padding: 3%;
 }
 
+#blankLandingPage{
+    background-color: white;
+    margin-top: 10%;
+    padding: 12%;
+}
+
+#lightBlueLanding{
+    background-color: rgb(123, 218, 255);
+    margin-top: 15%;
+    padding: 15%;
+    
+}
 .categorie{
     padding: 3%;
 }
@@ -74,7 +86,41 @@ div h2{
     width: 2%;
     height: 3%;
 }
-
+#imageIcon{
+    position: absolute;
+    width: 450px;
+    height: 465px;
+    left: 42px;
+    top: 1341px;
+}
+#imageIcon2{
+    position: absolute;
+    width: 843px;
+    height: 210px;
+    left: 522px;
+    top: 1341px;
+}
+#imageIcon3{
+    position: absolute;
+    width: 252px;
+    height: 212px;
+    left: 522px;
+    top: 1594px;
+}
+#imageIcon4{
+    position: absolute;
+    width: 244px;
+    height: 212px;
+    left: 830px;
+    top: 1594px;
+}
+#imageIcon5{
+    position: absolute;
+    width: 235px;
+    height: 212px;
+    left: 1130px;
+    top: 1594px;
+}
 /* buttons and a and input boxes*/
 lia a:hover{
     text-decoration: none;   
