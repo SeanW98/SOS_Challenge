@@ -1,0 +1,28 @@
+env:
+  es6: true
+  node: true
+extends: 'eslint:recommended'
+parser: 'babel-eslint'
+rules:
+  indent:
+    - error
+    - 4
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - warn
+    - single
+  semi:
+    - error
+    - always
+  require-await:
+    - error
+  no-var:
+    - error
+  prefer-const:
+    - error
+  no-buffer-constructor:
+    - error
+  object-shorthand:
+    - error

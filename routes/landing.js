@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-let landing = require('../controllers/landing');
+const express = require('express');
+const router = express.Router();
+const landing = require('../controllers/landing');
 
 /* GET home page. */
 

@@ -2,11 +2,11 @@ const Business = require('../models/business');
 const mongoose = require('mongoose');
 
 
-exports.get_addBusiness = function(req, res, next) {
+exports.get_addBusiness = function(req, res) {
     res.render('addBusiness');
-}
+};
 
-exports.addBusiness = function (req, res, next) {
+exports.addBusiness = function (req, res) {
     const business = new Business({
         _id: new mongoose.Types.ObjectId(),
         businessName: req.body.businessName,
@@ -18,9 +18,9 @@ exports.addBusiness = function (req, res, next) {
         businessWebsite: req.body.businessWebsite
     });
     business
-    .save()
-    .then( function () {
-        res.redirect('/');
+        .save()
+        .then( function () {
+            res.redirect('/');
         }
-    );
-}
+        );
+};

@@ -3,20 +3,20 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
 
-exports.get_signUp = function (req, res, next) {
+exports.get_signUp = function (req, res) {
     res.render('signUp');
-}
+};
 
-exports.addUser = function (req, res, next) {
+exports.addUser = function (req, res) {
     if (req.body.password == req.body.passwordCheck) {
         User.find({email: req.body.email})
             .exec()
             .then(user => {
                 if (user.length >= 1) {
-                    res.send("This email already has an account. Please try to sign up again.")
+                    res.send('This email already has an account. Please try to sign up again.');
                 } else{bcrypt.hash(req.body.password, 10, function (err, hash)  {
                     if (err) {
-                        res.send("500 error")
+                        res.send('500 error');
                     } else {
                         const user = new User({
                             _id: new mongoose.Types.ObjectId(),
@@ -32,9 +32,9 @@ exports.addUser = function (req, res, next) {
                             }
                             );
                     }
-                })}
-            })
+                });}
+            });
     } else {
-        return res.send("Passwords did not match. Please try to sign up again.");
+        return res.send('Passwords did not match. Please try to sign up again.');
     }
-}
+};
