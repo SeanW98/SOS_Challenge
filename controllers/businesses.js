@@ -3,69 +3,72 @@ const Business = require('../models/business');
 const Review = require('../models/review');
 const jwt = require('JsonWebToken');
 
-exports.showMuseums = function (req, res, next) {
+exports.showMuseums = function (req, res) {
     Business.find({businessType: 'Museums'})
-    .select('businessName')
-    .exec()
-    .then(doc =>{
-        res.render('businesses', { businesses: doc, type:"Museums"});
-    });
-}
-
-exports.showHotels = function (req, res, next) {
-    Business.find({businessType: 'Hotels'})
-    .select('businessName')
-    .exec()
-    .then(doc =>{
-        res.render('businesses', { businesses: doc, type:"Hotels"});
-    });
-}
-
-exports.showEvents = function (req, res, next) {
-    Business.find({businessType: 'Events'})
-    .select('businessName')
-    .exec()
-    .then(doc =>{
-        res.render('businesses', { businesses: doc, type:"Events"});
-    });
-}
-
-exports.showOthers = function (req, res, next) {
-    Business.find({businessType: 'Others'})
-    .select('businessName')
-    .exec()
-    .then(doc =>{
-        res.render('businesses', { businesses: doc, type:"Others"});
-    });
-}
-
-exports.showOneBusiness = function (req, res, next) {
-    Business.findOne({_id: req.params.businessId})
-    .exec()
-    .then(foundBusiness=>{
-        Review.find({businessId: req.params.businessId})
+        .select('businessName')
         .exec()
-        .then(foundReviews=>{
-            res.render('singleBusiness', { business: foundBusiness , reviews: foundReviews})
+        .then(doc =>{
+            res.render('businesses', { businesses: doc, type:'Museums'});
         });
-    });
-}
+};
 
-exports.submitReview = function (req, res, next) {
-    let decoded = jwt.verify(req.cookies.token, 'secret');
+exports.showHotels = function (req, res) {
+    Business.find({businessType: 'Hotels'})
+        .select('businessName')
+        .exec()
+        .then(doc =>{
+            res.render('businesses', { businesses: doc, type:'Hotels'});
+        });
+};
+
+exports.showEvents = function (req, res) {
+    Business.find({businessType: 'Events'})
+        .select('businessName')
+        .exec()
+        .then(doc =>{
+            res.render('businesses', { businesses: doc, type:'Events'});
+        });
+};
+
+exports.showOthers = function (req, res) {
+    Business.find({businessType: 'Others'})
+        .select('businessName')
+        .exec()
+        .then(doc =>{
+            res.render('businesses', { businesses: doc, type:'Others'});
+        });
+};
+
+exports.showOneBusiness = function (req, res) {
+    Business.findOne({_id: req.params.businessId})
+        .exec()
+        .then(foundBusiness=>{
+            Review.find({businessId: req.params.businessId})
+                .exec()
+                .then(foundReviews=>{
+                    //let total = 0;
+                    //for (review in foundReviews) { total += review.rating; }
+                    //avgTotal = total / foundReviews.length;
+                    res.render('singleBusiness', { business: foundBusiness , reviews: foundReviews, avgTotal});
+                });
+        });
+};
+
+exports.submitReview = function (req, res) {
+    const decoded = jwt.verify(req.cookies.token, 'secret');
     const review = new Review({
         _id: new mongoose.Types.ObjectId(),
         businessId: req.body.businessId,
         userId: decoded._id,
-        userName: decoded.firstName + " " + decoded.lastName,
+        userName: decoded.firstName + ' ' + decoded.lastName,
         comment: req.body.review,
         rating: req.body.rating
 
     });
     review
-    .save()
-    .then( function () {
-    res.redirect('/');
-    }
-);
-}
+        .save()
+        .then( function () {
+            res.redirect('/');
+        }
+        );
+};
