@@ -3,7 +3,7 @@
     padding: 2%;
 }
 
-/* navbar and footer CSS */
+/* navbar CSS*/
 
 body ul.navbar{
     background-color: #194769;
@@ -14,24 +14,10 @@ body ul.navbar{
 body ul lia.navbar{
     margin: 1%;
 }
- /*footer CSS*/
-body ul.footer{
-    background-color: #194769;
-    text-align: center;
-    
-}
 
 #navbarOne{
     width:7%;
     height:7%; 
-}
-
-footer{
-    /* Used from https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/*/
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 2.5rem;
 }
 
 /* landing page CSS */
