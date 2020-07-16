@@ -46,9 +46,9 @@ exports.showOneBusiness = function (req, res) {
             Review.find({businessId: req.params.businessId})
                 .exec()
                 .then(foundReviews=>{
-                    //let total = 0;
-                    //for (review in foundReviews) { total += review.rating; }
-                    //avgTotal = total / foundReviews.length;
+                    let total = 0;
+                    for (var review in foundReviews) { total += foundReviews[review].rating; }
+                    avgTotal = (total / Object.keys(foundReviews).length).toFixed(1);
                     res.render('singleBusiness', { business: foundBusiness , reviews: foundReviews, avgTotal});
                 });
         });
