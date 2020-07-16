@@ -9,9 +9,9 @@ block content
     div(id="landingPage")
         h2 The best way to be safe from COVID-19
         h1 Don't risk it. Checkfirst.
-        form(action="/", method="post", id="homeSearchBar")
-            input(type="text" placeholder="Where are you going?" size="50")
-            input(type="text" placeholder="Location" size="30")
+        form( method="post", action="/search", id="homeSearchBar")
+            input(name="name" type="text" placeholder="Where are you going?" size="50")
+            input(name="location" type="text" placeholder="Location" size="30")
             button(type="submit") Search
         br
         div(id="homeCategorieIcons")                                                                 

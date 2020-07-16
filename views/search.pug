@@ -1,0 +1,12 @@
+include navbar
+
+doctype html
+html
+  head
+    title= title
+block content
+    h1 Search
+    ul
+        each result, i in results
+            a(href= "../businesses/" + result.businessType + "/" + result._id , class='tourismList' )= result.businessName
+include footer
