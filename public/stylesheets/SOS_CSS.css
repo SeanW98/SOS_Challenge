@@ -23,25 +23,25 @@ body ul lia.navbar{
 /* landing page CSS */
 
 #landingPage{
+    height: 200%;
+}
+#landingPageTop{
     background-color: #194769;
     margin-top: -4%;
     padding: 3%;
 }
 
-#blankLandingPage{
+#whiteLandingPage{
+    height: 22%;
     background-color: white;
-    margin-top: 10%;
-    padding: 12%;
 }
 
 #lightBlueLanding{
+    height: 20%;
     background-color: rgb(123, 218, 255);
-    margin-top: 15%;
-    padding: 15%;
-    
 }
 .categorie{
-    padding: 3%;
+    padding: 2%;
 }
 
 div h2{
@@ -73,39 +73,23 @@ div h2{
     height: 3%;
 }
 #imageIcon{
-    position: absolute;
-    width: 450px;
-    height: 465px;
-    left: 42px;
-    top: 1341px;
+    width: 2%;
+    height: 3%;
+    margin: 2%;
 }
 #imageIcon2{
-    position: absolute;
-    width: 843px;
-    height: 210px;
-    left: 522px;
-    top: 1341px;
+    width: 2%;
+    height: 3%;
+    margin: 2%;
 }
 #imageIcon3{
-    position: absolute;
-    width: 252px;
-    height: 212px;
-    left: 522px;
-    top: 1594px;
+    margin: 2%;
 }
 #imageIcon4{
-    position: absolute;
-    width: 244px;
-    height: 212px;
-    left: 830px;
-    top: 1594px;
+    margin: 2%;
 }
 #imageIcon5{
-    position: absolute;
-    width: 235px;
-    height: 212px;
-    left: 1130px;
-    top: 1594px;
+    margin: 2%;
 }
 /* buttons and a and input boxes*/
 lia a:hover{
