@@ -68,7 +68,8 @@ exports.submitReview = function (req, res) {
     review
         .save()
         .then( function () {
-            res.redirect('/');
+            console.log(req.body.businessType);
+            res.redirect('/businesses/' + req.body.businessType + '/' + req.body.businessId );
         }
         );
 };
