@@ -5,16 +5,18 @@ html
   head
     title= title
 block content
-    h1 Sign Up
+    h5 Sign Up
     form(method="post", action= "/signUp")
-        input(name="firstName", type="string", placeholder="First Name")
-        br
-        input(name="lastName", type="string", placeholder="Last Name")
-        br
-        input(name="email", type="email", placeholder="Email")
-        br
-        input(name="password", type="string", placeholder="Enter New Password")
-        br
-        input(name="passwordCheck", type="password", placeholder="Re-Enter Password")
-        br
-        button(type="submit") Sign Up 
+    div(id="signUp")
+      input(name="firstName", type="string", placeholder="First Name")
+      br
+      input(name="lastName", type="string", placeholder="Last Name")
+      br
+      input(name="email", type="email", placeholder="Email")
+      br
+      input(name="password", type="string", placeholder="Enter New Password")
+      br
+      input(name="passwordCheck", type="password", placeholder="Re-Enter Password")
+    div(id="signUpButton")
+      br
+      button(type="submit") Sign Up 

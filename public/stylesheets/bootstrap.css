@@ -415,11 +415,37 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 1.5rem;
+  position: absolute;
+  width: 300px;
+  height: 83px;
+  left: 630px;
+  top: 159px;
+
+  font-family: American Typewriter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 83px;
+  letter-spacing: 0.15em;
+
+  color: #000000;
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  position: absolute;
+  width: 314px;
+  height: 83px;
+  left: 630px;
+  top: 159px;
+
+  font-family: American Typewriter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 83px;
+  letter-spacing: 0.15em;
+
+  color: #000000;
 }
 
 h6, .h6 {

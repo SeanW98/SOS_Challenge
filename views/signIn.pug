@@ -5,13 +5,16 @@ html
   head
     title= title
 block content
-    h1 Sign In
+    h4   Sign In
     form(method="post", action= "/signIn")
+    div(id="signIn")
         input(name="email", type="email", placeholder="Enter Email")
         br
         input(name="password", type="password", placeholder="Enter Password")
-        br
+    br
+    div(id="signInButton")    
         button(type="submit") Sign In
     br
-    lia
-        a(href="/signUp" class="tourismList") Not a user? Sign up!
+    div(id="notAUser")
+        lia
+            a(href="/signUp" class="tourismList") Not a user? Sign up!

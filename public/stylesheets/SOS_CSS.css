@@ -114,3 +114,76 @@ input{
     border: 1px solid #000000;
     box-sizing: border-box;
 }
+
+/* signin page */
+#signIn{
+    position: absolute;
+    width: 534px;
+    height: 61px;
+    left: 493px;
+    top: 296px;
+    box-sizing: border-box;
+    font-size: 28px;
+    text-align: center;
+}
+
+#signInButton{
+    position: absolute;
+    width: 169px;
+    height: 56px;
+    left: 715px;
+    top: 440px;
+    text-align: left;
+    opacity: 0.6;
+    border-radius: 14.83px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 35px;
+
+    color: #FFFFFF;
+}
+#notAUser{
+    position: absolute;
+    width: 463px;
+    height: 35px;
+    left: 540px;
+    top: 536px;
+    font-family: American Typewriter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.3em;
+    color: #ED6230;
+}
+
+/* sign up page */
+#signUp{
+    position: absolute;
+    width: 534px;
+    height: 61px;
+    left: 510px;
+    top: 296px;
+    box-sizing: border-box;
+    font-size: 28px;
+    text-align: center;
+}
+#signUpButton{
+    position: absolute;
+    width: 169px;
+    height: 56px;
+    left: 715px;
+    top: 540px;
+    text-align: left;
+    opacity: 0.6;
+    border-radius: 14.83px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 35px;
+
+    color: #FFFFFF;
+}
