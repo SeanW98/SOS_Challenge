@@ -411,16 +411,10 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  position: absolute;
-  width: 300px;
-  height: 83px;
-  left: 630px;
-  top: 159px;
-
   font-family: American Typewriter;
   font-style: normal;
   font-weight: bold;
-  font-size: 68px;
+  font-size: 50px;
   line-height: 83px;
   letter-spacing: 0.15em;
 
