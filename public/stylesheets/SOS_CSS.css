@@ -1,12 +1,3 @@
-/*businesses CSS*/
-.tourismList{
-    border: 1px solid rgba(0, 0, 0, 0.7);
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 38px;
-    
-}
-
 /* navbar CSS*/
 
 body ul.navbar{
@@ -193,6 +184,9 @@ input{
 }
 
 /*Businesses Page*/
+.tourismList{
+    padding: 38px;
+}
 
 #businessPage{
     background-color:rgb(123, 218, 255);
@@ -205,10 +199,22 @@ input{
 }
 
 #businessesList{
-    text-align: center;
+    text-align: left;
 }
 
 #businessesPhoto{
     width:100px;
     height: 100px;
+}
+.businessBox{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 2%;
+    width: 800px;
+}
+
+#results{
+    padding: 10px;
+    margin-bottom: 20px;
+    color: black;
 }

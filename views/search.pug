@@ -6,7 +6,13 @@ html
     title= title
 block content
     h1(id="businessPage") Search
-    p results
-    div(id="businessesList")
-        each result, i in results
-            a(href= "../businesses/" + result.businessType + "/" + result._id , class='tourismList' )= result.businessName
+    p(id="results") All Results 
+        ul(id="businessesList")
+            each result, i in results
+                div(class="businessBox")
+                    img(src="/images/tempPhoto.png" id="businessesPhoto")
+                    a(href= "../businesses/" + result.businessType + "/" + result._id , class='tourismList' )= result.businessName
+                br
+                br
+        
+            

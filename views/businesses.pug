@@ -6,11 +6,12 @@ html
     title= title
 block content
     h1(id="businessPage") #{type}
-    p All Results 
+    p(id="results") All Results 
         ul(id="businessesList")
             each business, i in businesses
-                img(src="/images/tempPhoto.png" id="businessesPhoto")
-                a(href= "/businesses/" + type + "/" + business._id , class='tourismList' )= business.businessName + ": Business Intro"
+                div(class="businessBox")
+                    img(src="/images/tempPhoto.png" id="businessesPhoto")
+                    a(href= "/businesses/" + type + "/" + business._id , class='tourismList' )= business.businessName
                 br
                 br
 
