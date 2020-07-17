@@ -1,6 +1,10 @@
 /*businesses CSS*/
 .tourismList{
-    padding: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 38px;
+    
 }
 
 /* navbar CSS*/
@@ -186,4 +190,25 @@ input{
     line-height: 35px;
 
     color: #FFFFFF;
+}
+
+/*Businesses Page*/
+
+#businessPage{
+    background-color:rgb(123, 218, 255);
+    color: #000000;
+
+    text-align: center;
+    font-size: 100px;
+    margin-top: -20px;
+    padding-bottom: 30px;
+}
+
+#businessesList{
+    text-align: center;
+}
+
+#businessesPhoto{
+    width:100px;
+    height: 100px;
 }

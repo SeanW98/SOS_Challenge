@@ -5,7 +5,8 @@ html
   head
     title= title
 block content
-    h1 Search
-    ul
+    h1(id="businessPage") Search
+    p results
+    div(id="businessesList")
         each result, i in results
             a(href= "../businesses/" + result.businessType + "/" + result._id , class='tourismList' )= result.businessName

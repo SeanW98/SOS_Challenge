@@ -5,9 +5,13 @@ html
   head
     title= title
 block content
-    h1 #{type}
-    ul
-        each business, i in businesses
-            a(href= "/businesses/" + type + "/" + business._id , class='tourismList' )= business.businessName
+    h1(id="businessPage") #{type}
+    p All Results 
+        ul(id="businessesList")
+            each business, i in businesses
+                img(src="/images/tempPhoto.png" id="businessesPhoto")
+                a(href= "/businesses/" + type + "/" + business._id , class='tourismList' )= business.businessName + ": Business Intro"
+                br
+                br
 
 // Parsing information found from https://www.youtube.com/watch?v=Ad2ngx6CT0M
