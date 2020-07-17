@@ -116,7 +116,7 @@ input{
 }
 
 /* signin page */
-#signIn{
+#signInPage{
     position: absolute;
     width: 534px;
     height: 61px;
@@ -160,7 +160,7 @@ input{
 }
 
 /* sign up page */
-#signUp{
+#signUpPage{
     position: absolute;
     width: 534px;
     height: 61px;
