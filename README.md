@@ -4,10 +4,10 @@
 ### that could help Indiana tourism and draw guest back to Indiana. Another goal was to make tourist feel that Indiana does 
 ### take safety seriously. 
 
-##Code and Dependencies
+## Code and Dependencies
 ### Application used Node js version 12.18.1
 ### Dependencies installed using npm
-####Dependencies can be found in package.json file
+#### Dependencies can be found in package.json file
 
 ## Database
 ### MongoDB Atlas was used to host our database server
