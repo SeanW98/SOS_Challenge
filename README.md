@@ -1,8 +1,6 @@
 # SOS_Challenge- Checkfirst Web App
 
-### This application was created for TechPoint’s SOS Challenge. Our team was given the challenge to create an application 
-### that could help Indiana tourism and draw guest back to Indiana. Another goal was to make tourist feel that Indiana does 
-### take safety seriously. 
+### This application was created for TechPoint’s SOS Challenge. Our team was given the challenge to create an application that could help Indiana tourism and draw guest back to Indiana. Another goal was to make tourist feel that Indiana does take safety seriously. 
 
 ## Code and Dependencies
 ### Application used Node js version 12.18.1
