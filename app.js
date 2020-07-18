@@ -19,7 +19,7 @@ const logoutRouter = require('./routes/logout');
 const myAccountRouter = require('./routes/myAccount');
 const addBusinessRouter = require('./routes/addBusiness');
 const businessesRouter = require('./routes/businesses');
-
+const aboutUsRouter = require('./routes/aboutUs');
 
 //vanilla app created
 const app = express();
@@ -42,6 +42,7 @@ app.use('/logout', logoutRouter);
 app.use('/myAccount', myAccountRouter);
 app.use('/addBusiness', addBusinessRouter);
 app.use('/businesses', businessesRouter);
+app.use('/aboutUs', aboutUsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
