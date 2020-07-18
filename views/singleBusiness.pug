@@ -5,16 +5,21 @@ html
   head
     title= title
 block content
-    h1 #{business.businessName} 
+    h2(id="singleBusinessTitle") #{business.businessName} 
     br
-    h2 Rating: #{avgTotal}
-    div
+    h2(id="singleBusinessReview") Rating: #{avgTotal}
+    img(src="/images/tempPhoto.png" id="singleBusinessPictures")
+    img(src="/images/tempPhoto.png" id="singleBusinessPictures")
+    img(src="/images/tempPhoto.png" id="singleBusinessPictures")
+    div(class="businessContactInfo")
         p Phone Number: #{business.phoneNumber}
         p Address: #{business.businessAddress}
-    div
-        p About: #{business.businessIntro}
-        p Prevention Measures: #{business.covidPrevention}
         P Website: #{business.businessWebsite}
+    div(class = "businessInformation")
+        p(class="businessInformationHeader") About: 
+            p #{business.businessIntro}
+        p(class="businessInformationHeader") Prevention Measures: 
+            p #{business.covidPrevention}
     br
     h3 Reviews
     div
