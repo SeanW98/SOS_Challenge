@@ -21,11 +21,8 @@ block content
         p(class="businessInformationHeader") Prevention Measures: 
             p #{business.covidPrevention}
     br
-    h3 Reviews
-    div
-        each review, i in reviews
-            p= review.userName + ": " + review.comment
-    div
+    h3 Add Review
+    div(id = "reviewForm")
         form(method="post", action= "/businesses/submitReview")
             input(type="text", name="review", placeholder="Add Review", size="80")
             br
@@ -45,3 +42,12 @@ block content
             input(type="hidden", name="businessId" value= business._id)
             input(type="hidden", name="businessType" value= business.businessType)
             button(type="submit") Add Review
+
+    h3 Reviews
+    div
+        each review, i in reviews
+            div(class="review")
+                p= review.userName
+                br
+                p= "Rating: " + review.rating
+                p= review.comment

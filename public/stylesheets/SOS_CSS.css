@@ -215,3 +215,16 @@ div.businessInformation p{
 div.businessContactInfo p{
     padding: 8px;
 }
+
+.review{
+    color:black;
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    margin: 5px;
+    padding: 2%;
+    width: 800px;
+}
+
+#reviewForm{
+    margin: 10px;
+    margin-bottom: 40px;
+}
