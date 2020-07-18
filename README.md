@@ -5,7 +5,7 @@
 ## Code and Dependencies
 ### Application used Node js version 12.18.1
 ### Dependencies installed using npm
-#### Dependencies can be found in package.json file
+### Dependencies can be found in package.json file
 
 ## Database
 ### MongoDB Atlas was used to host our database server
