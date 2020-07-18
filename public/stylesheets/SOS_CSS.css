@@ -174,3 +174,44 @@ input{
     margin-bottom: 20px;
     color: black;
 }
+
+/*Single Business Page*/
+#singleBusinessTitle{
+    color: #000000;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+#singleBusinessReview{
+    margin-left: 50px;
+    color: #000000;
+}
+
+.businessInformation{
+    color: #000000;
+}
+
+#singleBusinessPictures{
+    margin: 2%;
+    width:200px;
+    height: 200px;
+}
+
+div.businessInformation p{
+    padding: 10px;
+}
+
+.businessInformationHeader{
+    color: #ED6230;
+}
+
+.businessContactInfo{
+    color: black;
+    float: right;
+}
+
+div.businessContactInfo p{
+    padding: 8px;
+}
