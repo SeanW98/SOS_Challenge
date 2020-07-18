@@ -228,3 +228,10 @@ div.businessContactInfo p{
     margin: 10px;
     margin-bottom: 40px;
 }
+
+/* aboutUs Page */
+#aboutUsPage{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
