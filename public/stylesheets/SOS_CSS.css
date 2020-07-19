@@ -292,6 +292,13 @@ div.businessContactInfo p{
     height: 6%;
 }
 
+#vyPic{
+    margin-left: 1070px;
+    margin-top: -243px;
+    width: 6%;
+    height: 6%;
+}
+
 #evanPic{
     margin-left: 850px;
     margin-top: -10px;
@@ -302,6 +309,13 @@ div.businessContactInfo p{
 #brentonPic{
     margin-left: 960px;
     margin-top: -195px;
+    width: 6%;
+    height: 6%;
+}
+
+#lindseyPic{
+    margin-left: 1070px;
+    margin-top: -243px;
     width: 6%;
     height: 6%;
 }
