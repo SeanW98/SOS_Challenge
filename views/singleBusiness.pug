@@ -7,7 +7,7 @@ html
 block content
     h2(id="singleBusinessTitle") #{business.businessName} 
     br
-    h2(id="singleBusinessReview") Rating: #{avgTotal}
+    h2(id="singleBusinessReview") Safety Rating: #{avgTotal} /5
     img(src="/images/tempPhoto.png" id="singleBusinessPictures")
     img(src="/images/tempPhoto.png" id="singleBusinessPictures")
     img(src="/images/tempPhoto.png" id="singleBusinessPictures")
@@ -49,5 +49,5 @@ block content
             div(class="review")
                 p= review.userName
                 br
-                p= "Rating: " + review.rating
+                p= "Safety Rating: " + review.rating
                 p= review.comment
