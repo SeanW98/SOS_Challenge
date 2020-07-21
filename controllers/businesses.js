@@ -46,6 +46,7 @@ exports.showOneBusiness = function (req, res) {
             Review.find({businessId: req.params.businessId})
                 .exec()
                 .then(foundReviews=>{
+                    //This is where the average total for a business is currently calculated
                     let total = 0;
                     for (var review in foundReviews) { total += foundReviews[review].rating; }
                     avgTotal = (total / Object.keys(foundReviews).length).toFixed(1);

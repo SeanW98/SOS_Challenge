@@ -2,6 +2,13 @@ const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('JsonWebToken');
 
+//JWT creates a user token so that it can be
+//safely passed as a cookie when making sure a user
+//is truly signed in
+
+//If cookie is edit by user, JWT will notice and 
+//have the cookie shown as invalid
+
 exports.get_signIn = function(req, res) {
     res.render('signIn');
 };

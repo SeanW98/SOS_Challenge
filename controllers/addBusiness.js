@@ -6,6 +6,9 @@ exports.get_addBusiness = function(req, res) {
     res.render('addBusiness');
 };
 
+//Instead of adding a business, this in the future, would link
+//to an admin page that can be reviewed before being added to 
+//the collections of bsuinesses
 exports.addBusiness = function (req, res) {
     const business = new Business({
         _id: new mongoose.Types.ObjectId(),
